@@ -49,7 +49,25 @@ import { AppModule } from './app/app.module';
 ````
 
 That is we go inside app.module.ts file
+There we have specified the information regarding the modules and component selectors that we want to send to index.html
 
+````
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+````
+
+Here first line indicates the component file in which bindings will be present. And rest of the lines indicates the modules that will be imported.
+App component will look like
 ````
 @Component({
   selector: 'app-root',
