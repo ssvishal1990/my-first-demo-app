@@ -106,3 +106,18 @@ Each component of ours should ideally have it's own html component.
    Add the import and the declaration. And angular server should automatically pick up this changes. 
 
 3. Check your changes at localhost server. 
+
+
+# Alternate way of adding a new component. 
+
+In the CLi you can use 
+
+````
+ng generate component <component name>
+
+or
+
+ng g c <component name>
+````
+
+This will create your component ts file, a spec file to test it and add it's declaration in module files
