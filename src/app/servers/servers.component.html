@@ -7,7 +7,16 @@
     type="text"
     class="form-control"
     [(ngModel)]="serverName" >
+    <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="userName"
+    (input)="enableClearButton()">
+    <p>
+      {{ userName }}
+    </p>
 <button class = 'btn-primary' [disabled]="!alllowNewServer" (click)="onCreateServer()"> Add Server </button>
+<button class = 'btn-primary' [disabled]="!allowClearUserName" (click)="clearUserName()"> CLear User Name</button>
 <!-- <p>{{ serverName }}</p> -->
 <p>{{ serverCreationStatus }}</p>
 <p [innerText]="alllowNewServer">

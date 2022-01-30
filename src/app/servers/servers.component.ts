@@ -10,8 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
 
   alllowNewServer = false;
+  allowClearUserName = false;
   serverCreationStatus = 'No Server was created!';
   serverName = 'TestServer';
+  userName = '';
   constructor() {
     setTimeout(() => {
       this.alllowNewServer = true;
@@ -28,6 +30,15 @@ export class ServersComponent implements OnInit {
   OnUpdateServerName(event: any){
     console.log(event);
     this.serverName = (<HTMLInputElement>event.target).value;
+  }
+
+  enableClearButton(){
+    this.allowClearUserName = true;
+  }
+
+  clearUserName(){
+    this.userName = '';
+    this.allowClearUserName = false;
   }
 
 }
