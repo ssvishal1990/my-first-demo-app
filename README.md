@@ -83,3 +83,26 @@ Ans styleSheet refers to the style rules that this has to follow
 
 
 By Default angular doesn't scan all your file you need to specify the modules in app.modules
+Remember we never modify index.html.
+Each component of ours should ideally have it's own html component. 
+
+
+# How to add a new component(Brief)
+
+1. Create a new Component and mark it with component declarator. WHat component essentially means here that it is a class/entity. 
+    ````
+    import { Component } from "@angular/core";
+
+    @Component({
+        selector: 'app-server',
+        templateUrl: './server.component.html'
+    })
+
+    export  class ServerComponent {
+
+    }
+    ````
+2. Then you add an import statement in your module file. For ex app.module.ts
+   Add the import and the declaration. And angular server should automatically pick up this changes. 
+
+3. Check your changes at localhost server. 
