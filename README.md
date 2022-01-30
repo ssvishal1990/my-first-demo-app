@@ -121,3 +121,12 @@ ng g c <component name>
 ````
 
 This will create your component ts file, a spec file to test it and add it's declaration in module files
+
+
+
+With respect to angular and fontend. Data binding can be defined as a path/communication between business logic present in backend/typesript and template(Html) that user see
+we can do this  by 
+1. string interpolation  --> ({{ data }})
+2. property binding ([property]="data")
+3. Event Binding -> (event) = "expression"
+4. Two-way-Binding -> [(ngmodel)] ="data"
