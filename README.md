@@ -127,6 +127,8 @@ This will create your component ts file, a spec file to test it and add it's dec
 With respect to angular and fontend. Data binding can be defined as a path/communication between business logic present in backend/typesript and template(Html) that user see
 we can do this  by 
 1. string interpolation  --> ({{ data }})
-2. property binding ([property]="data")
+2. property binding ([property]="data") --> [] basically indicate to angular that we are using property binding 
 3. Event Binding -> (event) = "expression"
 4. Two-way-Binding -> [(ngmodel)] ="data"
+
+Note: String interpolation doesn't work within property binding
