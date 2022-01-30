@@ -2,8 +2,9 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'app-server',
-    templateUrl: '.\server.component.html'
+    templateUrl: './server.component.html'
 })
-export default class ServerComponent {
+
+export  class ServerComponent {
 
 }

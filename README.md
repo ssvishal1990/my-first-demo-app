@@ -79,3 +79,7 @@ App component will look like
 The component selector specified the tag in which we want to export information. 
 TemplateUrl indicates what we want to import there. 
 Ans styleSheet refers to the style rules that this has to follow 
+
+
+
+By Default angular doesn't scan all your file you need to specify the modules in app.modules
