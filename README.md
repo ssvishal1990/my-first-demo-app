@@ -25,3 +25,39 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Basic Idea of how a page is  loaded when we go ng-serve 
+
+Upon inspection we saw that HTLM code which is hosted on localhost:4200 has new JS imports. 
+Those imports are done by Angular CLI. 
+
+As for the rest 
+When we fire ng-serve 
+
+There's 2 things we need to understand. 
+The first page that is displayed is index.html and it has a app-root tag within which the information will be loaded
+
+And the workflow to add information in this index.html goes like. 
+
+First main.ts will start 
+At a certain line it will have 
+
+
+````
+import { AppModule } from './app/app.module';
+````
+
+That is we go inside app.module.ts file
+
+````
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+````
+
+The component selector specified the tag in which we want to export information. 
+TemplateUrl indicates what we want to import there. 
+Ans styleSheet refers to the style rules that this has to follow 
