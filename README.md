@@ -132,3 +132,10 @@ we can do this  by
 4. Two-way-Binding -> [(ngmodel)] ="data"
 
 Note: String interpolation doesn't work within property binding
+For event binding we have a variable -> $event. THis variable gives us the access to the data. Once the even thas been triggered
+
+
+Directives are instructions in the DOM 
+
+1. Structural Directives are instruction to DOM which change the DOM structure also ex *ngif
+2. Attribute Directives don't add or remove elements/ change the structure
